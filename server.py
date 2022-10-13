@@ -13,5 +13,5 @@ while True:
             break
         if data.decode() == "close":
             break
-        conn.send(data)
-        conn.close()
+    conn.send(data)
+    conn.close()
