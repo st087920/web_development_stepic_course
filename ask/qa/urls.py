@@ -1,7 +1,7 @@
 
 from qa.views import test
-from django.contrib import url
-from django.urls import path
+# from django.contrib import url
+from django.urls import path, url
 
 urlpatterns = [
     url(r'.*', test, name='home'),
