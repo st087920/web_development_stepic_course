@@ -3,7 +3,7 @@ sudo rm -rf /etc/nginx/sites-enabled/default
 sudo /etc/init.d/nginx restart
 sudo ln -sf /home/box/web/hello.py /etc/gunicorn.d/hello.py
 sudo /etc/init.d/gunicorn restart
-gunicorn --bind='0.0.0.0:8080' hello:wsgi_aplication
+gunicorn --bind='0.0.0.0:8080' hello.py:wsgi_aplication
 
 #sudo ln -sf /home/box/web/hello.py /etc/gunicorn.d/hello.py
 #sudo /etc/init.d/gunicorn restart
