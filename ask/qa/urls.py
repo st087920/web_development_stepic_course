@@ -3,6 +3,8 @@ from qa.views import test
 # from django.contrib import url
 from django.urls import path, url
 
+print('fuck!')
+
 urlpatterns = [
     url(r'.*', test, name='home'),
     #url(r'^question/(\d+)/*', test, name='question'),
