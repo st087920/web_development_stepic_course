@@ -6,7 +6,7 @@ from django.urls import path, url
 print('fuck!')
 
 urlpatterns = [
-    url(r'.*', test, name='home'),
+    path(r'.*', test, name='home'),
     #url(r'^question/(\d+)/*', test, name='question'),
     #url(r'^login/*', test, name='login'),
     #url(r'^signup/*', test, name='signup'),
