@@ -4,7 +4,6 @@ def wsgi_aplication(environ, start_response):
   # body = "\n".join([i for i in environ['QUERY_STRING'].split('&')])
   headers = [
         ('Content-type', 'text/plain'),
-        ('Content-Length', str(len(body)))
     ]
   start_response(status, headers)
   return body
