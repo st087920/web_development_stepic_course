@@ -1,8 +1,14 @@
 
-    url(r'^$', include('qa.urls')),
-    url(r'^question/(\d+)/$', include('qa.urls')),
-    url(r'^login/$', include('qa.urls')),
-    url(r'^signup/$', include('qa.urls')),
-    url(r'ask/^$', include('qa.urls')),
-    url(r'popular/^$', include('qa.urls')),
-    url(r'new/^$', include('qa.urls')),
+from qa.views import test
+from django.contrib import url
+from django.urls import path
+
+urlpatterns = [
+    url(r'^*', test, name='home'),
+    url(r'^question/(\d+)/*', test, name='question'),
+    url(r'^login/*', test, name='login'),
+    url(r'^signup/*', test, name='signup'),
+    url(r'^ask/*', test, name='ask'),
+    url(r'^popular/*$', test, name='popular'),
+    url(r'^new/*$', test, name='new'),
+]
