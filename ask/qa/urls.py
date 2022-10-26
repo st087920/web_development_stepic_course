@@ -1,7 +1,8 @@
 
 from qa.views import test
 # from django.contrib import url
-from django.urls import path, url
+# from django.urls import path, url
+from django.conf.urls import url as path
 
 print('fuck!')
 
