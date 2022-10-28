@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 
 
 class Question(models.Model):
+  objects = QuestionManager() 
   title = models.CharField()                                            
   text = models.CharField()
   added_at = models.TimeField()
